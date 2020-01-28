@@ -1,0 +1,9 @@
+stages:
+  - lint
+
+lint:
+  image: node:10
+  stage: lint
+  script:
+    - npm install
+    - npm run lint
